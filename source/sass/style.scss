@@ -17,6 +17,15 @@
 
 // Blocks
 // ---------------------------------
+@import "blocks/header/connection";
+@import "blocks/header/main-header";
+
+@import "blocks/main/advantages";
+@import "blocks/main/main-block";
+@import "blocks/main/main-container";
+
+@import "blocks/footer/social-network";
+@import "blocks/footer/main-footer";
 
 @import "blocks/btn";
 @import "blocks/modal";
