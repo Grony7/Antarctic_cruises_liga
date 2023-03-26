@@ -1,0 +1,115 @@
+.card {
+  position: relative;
+  display: block;
+  min-height: 380px;
+  outline: none;
+
+  @include vp-1023 {
+    min-height: 386px;
+  }
+}
+
+.card h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card__back,
+.card__front {
+  width: 100%;
+  min-height: 100%;
+  display: block;
+
+  overflow: hidden;
+  backface-visibility: hidden;
+
+  transition: transform 300ms linear;
+  color: $color-alice-blue;
+  background-color: $color-tangaroa;
+}
+
+.card__front{
+  position: absolute;
+
+  display: flex;
+
+  padding: 30px 30px 22px;
+
+  transform: perspective(300px) rotateY(0deg);
+
+  @include vp-1023 {
+    padding: 20px 35px 27px;
+  }
+
+  @include vp-767 {
+    padding: 25px 25px 15px;
+  }
+}
+
+.card__front h3 {
+  position: relative;
+
+  margin: auto 0 0;
+  z-index: 1;
+}
+
+.card__back{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px 25px 30px;
+
+  transform: perspective(300px) rotateY(180deg);
+
+  @include vp-1023 {
+    padding: 28px 35px 35px;
+  }
+
+  @include vp-767 {
+    padding: 25px 25px 35px;
+  }
+}
+
+
+.card__back h3 {
+  margin: 0 0 15px;
+}
+
+.card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin: 0 0 6px;
+}
+
+.card__text-block h4 {
+  margin: 0 0 2px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card__text-block p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card__button {
+  margin: auto 0 0;
+}
+
+.card:focus-visible > .card__front,
+.card:hover > .card__front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:focus-visible > .card__back,
+.card:hover > .card__back{
+  transform: perspective(600px) rotateY(0deg);
+}

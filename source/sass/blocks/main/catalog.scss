@@ -1,0 +1,56 @@
+.catalog {
+  padding: 85px 0 120px;
+
+  @include vp-1023 {
+    padding: 90px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 60px 0 65px;
+  }
+}
+
+.catalog h2 {
+  display: block;
+  margin: 0 0 50px;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+
+  @include vp-1023 {
+    margin: 0 0 48px;
+
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 30px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  margin: 0;
+  padding: 0 15px;
+
+  list-style: none;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+
+    padding: 0 10px;
+  }
+}
