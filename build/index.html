@@ -447,6 +447,63 @@
       </ul>
     </div>
   </section>
+
+  <section class="reservations">
+    <picture>
+      <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/reservations/background-mobile.webp, img/reservations/background-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/reservations/background-tablet.webp, img/reservations/background-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/reservations/background.webp, img/reservations/background@2x.webp 2x">
+
+      <source media="(max-width: 787px)"
+              srcset="img/reservations/background-mobile.jpg, img/reservations/background-mobile@2x.jpg 2x">
+      <source media="(max-width: 1023px)"
+              srcset="img/reservations/background-tablet.jpg, img/reservations/background-tablet@2x.jpg 2x">
+      <img class="background-image" width="1366" height="555" src="img/reservations/background.jpg"
+           srcset="img/reservations/background.jpg, img/reservations/background@2x.jpg 2x"
+           alt="Фоновое изображение с видами Арктики">
+    </picture>
+    <div class="reservations__wrapper container">
+      <div class="reservations__text-wrapper">
+        <h2>Раннее бронирование</h2>
+        <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+      </div>
+
+      <div class="reservations__form-wrapper" data-form-validate="">
+        <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+        <form class="reservations__form form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="form__field" data-validate-type="text" data-limitation="name"
+               data-message-base="Поле обязательно к заполнению"
+               data-message-extra="Проверьте корректность заполнения поля" data-required>
+            <input type="text" placeholder="Имя" aria-label="Имя" required name="name" data-modal-form="name">
+          </div>
+          <div class="form__field" data-validate-type="phone"
+               data-message-base="Поле обязательно к заполнению"
+               data-message-extra="Проверьте корректность заполнения поля" data-required>
+            <input type="tel" placeholder="Телефон" aria-label="Телефон" name="tel" required>
+          </div>
+          <div class="form__field" data-validate-type="email" data-message-base="Поле обязательно к заполнению"
+               data-message-extra="Проверьте корректность заполнения поля" data-required>
+            <input type="email" placeholder="Email" aria-label="Email" name="email" required>
+          </div>
+
+
+          <div class="form__checkbox" data-validate-type="checkbox"
+               data-message-base="Подтвердите согласие на обработку данных">
+            <label>
+              <input type="checkbox" name="approval" required>
+              <span class="form__custom-checkbox"></span>
+              <span>Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</span>
+            </label>
+          </div>
+
+          <button class="reservations__form-button btn" type="submit">Оставить заявку</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 
 

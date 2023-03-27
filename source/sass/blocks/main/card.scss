@@ -1,12 +1,8 @@
 .card {
   position: relative;
   display: block;
-  min-height: 380px;
+  min-height: 386px;
   outline: none;
-
-  @include vp-1023 {
-    min-height: 386px;
-  }
 }
 
 .card h3 {
@@ -107,9 +103,9 @@
 
 .card:focus-visible > .card__front,
 .card:hover > .card__front{
-  transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(300px) rotateY(-180deg);
 }
 .card:focus-visible > .card__back,
 .card:hover > .card__back{
-  transform: perspective(600px) rotateY(0deg);
+  transform: perspective(300px) rotateY(0deg);
 }

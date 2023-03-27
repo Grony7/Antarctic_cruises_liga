@@ -37,6 +37,8 @@ body {
   display: flex;
   flex-direction: column;
 
+  overflow-x: hidden;
+
   background-color: $color-alice-blue;
 }
 

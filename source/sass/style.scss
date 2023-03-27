@@ -17,9 +17,12 @@
 
 // Blocks
 // ---------------------------------
+@import "blocks/main/form";
+
 @import "blocks/header/connection";
 @import "blocks/header/main-header";
 
+@import "blocks/main/reservations";
 @import "blocks/main/card";
 @import "blocks/main/catalog";
 @import "blocks/main/travelling";
