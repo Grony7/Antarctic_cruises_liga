@@ -101,11 +101,11 @@
   margin: auto 0 0;
 }
 
-.card:focus-visible > .card__front,
+.card:focus-within > .card__front,
 .card:hover > .card__front{
   transform: perspective(300px) rotateY(-180deg);
 }
-.card:focus-visible > .card__back,
+.card:focus-within > .card__back,
 .card:hover > .card__back{
   transform: perspective(300px) rotateY(0deg);
 }

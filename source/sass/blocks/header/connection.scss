@@ -37,4 +37,18 @@
     font-size: 12px;
     line-height: 15px;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    border-radius: 3px;
+    opacity: 1;
+    outline: 2px solid $color-alice-blue;
+  }
 }

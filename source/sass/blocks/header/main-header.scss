@@ -30,6 +30,22 @@
   }
 }
 
+.main-header__logo-wrapper {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    border-radius: 3px;
+    opacity: 1;
+    outline: 2px solid $color-alice-blue;
+  }
+}
+
 .main-header__logo {
   fill: $color-alice-blue;
 
@@ -84,6 +100,20 @@
       box-shadow: 0 6px 0 0 $color-alice-blue, 0 -6px 0 0 $color-alice-blue;
       transform: translate(-50%, -50%);
     }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    border-radius: 3px;
+    opacity: 1;
+    outline: 2px solid $color-alice-blue;
   }
 }
 
