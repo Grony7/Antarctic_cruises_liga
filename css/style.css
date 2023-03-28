@@ -454,7 +454,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow-x: hidden;
   background-color: #f9fbfd;
 }
 
@@ -789,6 +788,20 @@ button,
   line-height: 20px;
 }
 
+.connection a:hover {
+  opacity: 0.7;
+}
+
+.connection a:active {
+  opacity: 0.5;
+}
+
+.connection a:focus-visible {
+  border-radius: 3px;
+  opacity: 1;
+  outline: 2px solid #f9fbfd;
+}
+
 .main-header {
   position: absolute;
   top: 0;
@@ -809,6 +822,20 @@ button,
   gap: 10px;
 }
 
+.main-header__logo-wrapper:hover {
+  opacity: 0.7;
+}
+
+.main-header__logo-wrapper:active {
+  opacity: 0.5;
+}
+
+.main-header__logo-wrapper:focus-visible {
+  border-radius: 3px;
+  opacity: 1;
+  outline: 2px solid #f9fbfd;
+}
+
 .main-header__logo {
   fill: #f9fbfd;
 }
@@ -819,6 +846,20 @@ button,
 
 .main-header__toggle {
   display: none;
+}
+
+.main-header__toggle:hover {
+  opacity: 0.7;
+}
+
+.main-header__toggle:active {
+  opacity: 0.5;
+}
+
+.main-header__toggle:focus-visible {
+  border-radius: 3px;
+  opacity: 1;
+  outline: 2px solid #f9fbfd;
 }
 
 .contacts {
@@ -872,6 +913,20 @@ button,
   align-items: center;
   font-style: normal;
   gap: 10px;
+}
+
+.contacts__address-block:hover {
+  opacity: 0.7;
+}
+
+.contacts__address-block:active {
+  opacity: 0.5;
+}
+
+.contacts__address-block:focus-visible {
+  border-radius: 3px;
+  opacity: 1;
+  outline: 2px solid #011C40;
 }
 
 .contacts__address-block > svg {
@@ -1040,13 +1095,13 @@ button,
   margin: auto 0 0;
 }
 
-.card:focus-visible > .card__front,
+.card:focus-within > .card__front,
 .card:hover > .card__front {
   -webkit-transform: perspective(300px) rotateY(-180deg);
   transform: perspective(300px) rotateY(-180deg);
 }
 
-.card:focus-visible > .card__back,
+.card:focus-within > .card__back,
 .card:hover > .card__back {
   -webkit-transform: perspective(300px) rotateY(0deg);
   transform: perspective(300px) rotateY(0deg);
@@ -1232,6 +1287,20 @@ button,
   min-height: 30px;
 }
 
+.social-network a:hover {
+  opacity: 0.7;
+}
+
+.social-network a:active {
+  opacity: 0.5;
+}
+
+.social-network a:focus-visible {
+  border-radius: 3px;
+  opacity: 1;
+  outline: 2px solid #f9fbfd;
+}
+
 .social-network svg {
   position: absolute;
   top: 50%;
@@ -1297,8 +1366,17 @@ button,
   pointer-events: none;
 }
 
-.btn.focus-visible:focus {
-  opacity: 0.8;
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+.btn:focus-visible {
+  opacity: 1;
+  outline: 2px solid #2c39f2;
 }
 
 .modal {
@@ -2579,10 +2657,6 @@ button,
 @media (hover: hover) {
   .form__checkbox input:hover:not(.focus-visible) ~ .form__custom-checkbox {
     border: 2px solid #2c39f2;
-  }
-
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
   }
 
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
