@@ -2144,6 +2144,11 @@ button,
     line-height: 27px;
   }
 
+  .card h3 {
+    bottom: 8px;
+    right: 36px;
+  }
+
   .card__front {
     padding: 20px 35px 27px;
   }
@@ -2468,6 +2473,11 @@ button,
 
   .reservations__form-button {
     margin: 4px 0 0;
+  }
+
+  .card h3 {
+    bottom: 0;
+    right: 25px;
   }
 
   .card__front {
