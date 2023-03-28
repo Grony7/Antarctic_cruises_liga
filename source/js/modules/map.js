@@ -1,6 +1,8 @@
+/* eslint-disable */
+
 export const initMap = () => {
   ymaps.ready(init);
-}
+};
 
 const init = () => {
   const myMap = new ymaps.Map('map', {
@@ -8,9 +10,8 @@ const init = () => {
     zoom: 17,
     type: "yandex#map",
     map3d: true,
-    controls: ['zoomControl']
+    controls: ['zoomControl'],
   });
-
   const myPlacemark = new ymaps.Placemark(
       [59.93871645504667, 30.323047725021514],
     {
@@ -20,10 +21,8 @@ const init = () => {
       iconLayout: 'default#image',
       iconImageHref: './img/svg/marker.svg',
       iconImageSize: [18, 22],
-      iconImageOffset: [-22, -11]
+      iconImageOffset: [-22, -11],
     });
 
   myMap.geoObjects.add(myPlacemark);
-}
-
-
+};

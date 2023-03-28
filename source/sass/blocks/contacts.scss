@@ -16,7 +16,7 @@
   align-items: center;
 
   @include vp-1279 {
-    gap: 40px
+    gap: 40px;
   }
 
   @include vp-1023 {
@@ -66,7 +66,7 @@
   line-height: 27px;
 }
 
-.contacts__address{
+.contacts__address {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -113,4 +113,3 @@
   font-size: 16px;
   line-height: 24px;
 }
-

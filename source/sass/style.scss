@@ -13,27 +13,23 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
+@import "blocks/container";
 
 // Blocks
 // ---------------------------------
-@import "blocks/main/form";
-
-@import "blocks/header/connection";
-@import "blocks/header/main-header";
-
-@import "blocks/main/contacts";
-@import "blocks/main/reservations";
-@import "blocks/main/card";
-@import "blocks/main/catalog";
-@import "blocks/main/travelling";
-@import "blocks/main/advantages";
-@import "blocks/main/main-block";
-@import "blocks/main/main-container";
-
-@import "blocks/footer/social-network";
-@import "blocks/footer/main-footer";
-
+@import "blocks/form";
+@import "blocks/connection";
+@import "blocks/main-header";
+@import "blocks/contacts";
+@import "blocks/reservations";
+@import "blocks/card";
+@import "blocks/catalog";
+@import "blocks/travelling";
+@import "blocks/advantages";
+@import "blocks/main-block";
+@import "blocks/main-container";
+@import "blocks/social-network";
+@import "blocks/main-footer";
 @import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/custom-input";

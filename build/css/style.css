@@ -437,7 +437,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: #011C40;
+  color: #011c40;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -674,7 +674,7 @@ button,
   padding: 13px 16px 12px;
   font-size: 14px;
   line-height: 14px;
-  color: #011C40;
+  color: #011c40;
   outline: none;
   border: none;
   background-color: #f9fbfd;
@@ -759,8 +759,8 @@ button,
   left: 50%;
   width: 7px;
   height: 10px;
-  border-bottom: 2px solid #011C40;
-  border-right: 2px solid #011C40;
+  border-bottom: 2px solid #011c40;
+  border-right: 2px solid #011c40;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
@@ -926,7 +926,7 @@ button,
 .contacts__address-block:focus-visible {
   border-radius: 3px;
   opacity: 1;
-  outline: 2px solid #011C40;
+  outline: 2px solid #011c40;
 }
 
 .contacts__address-block > svg {
@@ -977,7 +977,7 @@ button,
   width: 403px;
   padding: 43px 50px 50px;
   color: #f9fbfd;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .reservations__form-wrapper p {
@@ -1013,6 +1013,12 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  position: absolute;
+  bottom: 6px;
+  right: 32px;
+  -webkit-transform: perspective(300px) rotateY(-180deg);
+  transform: perspective(300px) rotateY(-180deg);
+  z-index: 1;
 }
 
 .card__back,
@@ -1029,7 +1035,7 @@ button,
   transition: transform 300ms linear;
   transition: transform 300ms linear, -webkit-transform 300ms linear;
   color: #f9fbfd;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .card__front {
@@ -1042,12 +1048,6 @@ button,
   transform: perspective(300px) rotateY(0deg);
 }
 
-.card__front h3 {
-  position: relative;
-  margin: auto 0 0;
-  z-index: 1;
-}
-
 .card__back {
   position: relative;
   display: -webkit-box;
@@ -1057,13 +1057,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 28px 25px 30px;
+  padding: 28px 25px 34px;
   -webkit-transform: perspective(300px) rotateY(180deg);
   transform: perspective(300px) rotateY(180deg);
-}
-
-.card__back h3 {
-  margin: 0 0 15px;
 }
 
 .card__text-wrapper {
@@ -1078,14 +1074,14 @@ button,
   margin: 0 0 6px;
 }
 
-.card__text-block h4 {
+.card__text-block dt {
   margin: 0 0 2px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
-.card__text-block p {
+.card__text-block dd {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -1105,6 +1101,15 @@ button,
 .card:hover > .card__back {
   -webkit-transform: perspective(300px) rotateY(0deg);
   transform: perspective(300px) rotateY(0deg);
+}
+
+.card:focus-within > .card__back h3,
+.card:hover > .card__back h3 {
+  position: static;
+  margin: 0 0 15px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 .catalog {
@@ -1233,7 +1238,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   color: #f9fbfd;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .main-block__wrapper {
@@ -1327,7 +1332,7 @@ button,
 .main-footer {
   padding: 50px 0;
   color: #f9fbfd;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .main-footer__wrapper {
@@ -1348,7 +1353,7 @@ button,
 .btn {
   display: block;
   padding: 14px 20px;
-  color: #011C40;
+  color: #011c40;
   background-color: #f9fbfd;
   border: none;
   cursor: pointer;
@@ -2339,7 +2344,7 @@ button,
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    color: #011C40;
+    color: #011c40;
   }
 
   .is-open .main-header__wrapper {
@@ -2359,7 +2364,7 @@ button,
   }
 
   .is-open .main-header__logo {
-    fill: #011C40;
+    fill: #011c40;
   }
 
   .is-open .main-header__connection {
@@ -2384,7 +2389,7 @@ button,
     left: 12px;
     width: 18px;
     height: 2px;
-    background-color: #011C40;
+    background-color: #011c40;
   }
 
   .is-open .main-header__toggle::before {
