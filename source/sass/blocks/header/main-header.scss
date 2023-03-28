@@ -121,6 +121,8 @@
 @include vp-767 {
   .is-open {
     &.main-header {
+      position: fixed;
+
       top: 0;
       left: 0;
 

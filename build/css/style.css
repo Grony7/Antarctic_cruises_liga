@@ -431,7 +431,7 @@ body {
 }
 
 html {
-  min-width: 320px;
+  min-width: 319px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2329,6 +2329,7 @@ button,
   }
 
   .is-open.main-header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
