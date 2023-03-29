@@ -1010,6 +1010,7 @@ button,
 }
 
 .card h3 {
+  max-width: calc(100% - 60px);
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1106,6 +1107,7 @@ button,
 .card:focus-within > .card__back h3,
 .card:hover > .card__back h3 {
   position: static;
+  max-width: none;
   margin: 0 0 15px;
   -webkit-transform: none;
   -ms-transform: none;
@@ -1344,6 +1346,7 @@ button,
 
 .main-footer__logo {
   fill: #f9fbfd;
+  min-width: 70px;
 }
 
 .main-footer__social-network {
@@ -2250,6 +2253,7 @@ button,
   }
 
   .main-footer__logo {
+    min-width: 38px;
     width: 38px;
     height: 20px;
   }
@@ -2581,6 +2585,7 @@ button,
   }
 
   .main-footer__logo {
+    min-width: 42px;
     width: 42px;
     height: 22px;
   }
