@@ -13,7 +13,9 @@
 
 </head>
 <body>
+
 <header class="main-header" data-menu="menu">
+  <div class="main-header__overlay" data-menu="overlay"></div>
   <nav class="main-header__wrapper container">
     <a class="main-header__logo-wrapper" href="#">
       <svg class="main-header__logo" aria-hidden="true" focusable="false" width="70" height="38">
@@ -448,7 +450,7 @@
         <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
       </div>
 
-      <div class="reservations__form-wrapper" data-form-validate="">
+      <div class="reservations__form-wrapper"  data-form-validate="" data-callback="base">
         <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
         <form class="reservations__form form" action="https://echo.htmlacademy.ru" method="get">
           <div class="form__field" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
