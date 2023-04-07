@@ -815,6 +815,10 @@ button,
   z-index: 10;
 }
 
+.main-header__overlay {
+  display: none;
+}
+
 .main-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,6 +917,7 @@ button,
   align-items: center;
   font-style: normal;
   gap: 10px;
+  margin-right: auto;
 }
 
 .contacts__address-block:hover {
@@ -942,6 +947,7 @@ button,
   position: relative;
   min-height: 555px;
   padding: 50px 0;
+  background-color: #dcf1fc;
 }
 
 .reservations__wrapper {
@@ -1058,9 +1064,11 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 400px;
   padding: 28px 25px 34px;
   -webkit-transform: perspective(300px) rotateY(180deg);
   transform: perspective(300px) rotateY(180deg);
+  overflow-y: auto;
 }
 
 .card__text-wrapper {
@@ -1161,6 +1169,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 22px;
+  width: 512px;
 }
 
 .travelling h2 {
@@ -1177,9 +1186,12 @@ button,
   line-height: 24px;
 }
 
+.travelling__image-wrapper {
+  margin: 0 0 auto;
+}
+
 .travelling__image-wrapper img {
   display: block;
-  min-width: 560px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1350,6 +1362,7 @@ button,
 }
 
 .main-footer__social-network {
+  min-width: 150px;
   margin: 0 0 0 auto;
 }
 
@@ -2171,8 +2184,11 @@ button,
   }
 
   .catalog__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (309px)[2];
+    grid-template-columns: repeat(2, 309px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .travelling {
@@ -2188,16 +2204,14 @@ button,
 
   .travelling__text-wrapper {
     gap: 16px;
+    width: 324px;
+    min-width: 324px;
   }
 
   .travelling h2 {
     margin: -10px 0 0;
     font-size: 26px;
     line-height: 36px;
-  }
-
-  .travelling__image-wrapper img {
-    min-width: 323px;
   }
 
   .advantages {
@@ -2266,6 +2280,18 @@ button,
 }
 
 @media (max-width: 767px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.menu-open {
+    overflow: hidden;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
   .container {
     padding: 0 15px;
   }
@@ -2349,11 +2375,22 @@ button,
     width: 100%;
     height: 100%;
     z-index: 100;
-    background-color: rgba(0, 43, 102, 0.5);
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
     color: #011c40;
+  }
+
+  .is-open .main-header__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    overflow: hidden;
   }
 
   .is-open .main-header__wrapper {
@@ -2370,6 +2407,7 @@ button,
     gap: 22px;
     background-color: #f9fbfd;
     z-index: 101;
+    overflow-y: scroll;
   }
 
   .is-open .main-header__logo {
@@ -2503,8 +2541,8 @@ button,
   }
 
   .catalog__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
     padding: 0 10px;
   }
 
@@ -2521,6 +2559,8 @@ button,
   }
 
   .travelling__text-wrapper {
+    width: 100%;
+    min-width: auto;
     gap: 14px;
   }
 
@@ -2529,8 +2569,12 @@ button,
     line-height: 36px;
   }
 
+  .travelling__image-wrapper {
+    width: 100%;
+  }
+
   .travelling__image-wrapper img {
-    min-width: 290px;
+    width: 100%;
   }
 
   .advantages {

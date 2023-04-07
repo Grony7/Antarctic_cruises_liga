@@ -41,6 +41,7 @@
 }
 
 .main-footer__social-network {
+  min-width: 150px;
   margin: 0 0 0 auto;
 
   @include vp-767 {

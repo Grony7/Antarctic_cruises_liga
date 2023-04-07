@@ -31,11 +31,19 @@
   flex-direction: column;
   gap: 22px;
 
+  width: 512px;
+
   @include vp-1023 {
     gap: 16px;
+
+    width: 324px;
+    min-width: 324px;
   }
 
   @include vp-767 {
+    width: 100%;
+    min-width: auto;
+
     gap: 14px;
   }
 }
@@ -68,17 +76,21 @@
   line-height: 24px;
 }
 
+.travelling__image-wrapper {
+  margin: 0 0 auto;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
 .travelling__image-wrapper img {
   display: block;
 
-  min-width: 560px;
   object-fit: cover;
 
-  @include vp-1023 {
-    min-width: 323px;
-  }
 
   @include vp-767 {
-    min-width: 290px;
+    width: 100%;
   }
 }

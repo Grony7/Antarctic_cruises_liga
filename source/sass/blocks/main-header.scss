@@ -21,6 +21,10 @@
   }
 }
 
+.main-header__overlay {
+  display: none;
+}
+
 .main-header__wrapper {
   display: flex;
   gap: 10px;
@@ -131,11 +135,21 @@
       height: 100%;
 
       z-index: 100;
-      background-color: rgba(0, 43, 102, 0.5);
-
       transform: none;
 
       color: $color-tangaroa;
+    }
+
+    & .main-header__overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      overflow: hidden;
     }
 
     & .main-header__wrapper {
@@ -153,6 +167,8 @@
       background-color: $color-alice-blue;
 
       z-index: 101;
+
+      overflow-y: scroll;
     }
 
     & .main-header__logo {

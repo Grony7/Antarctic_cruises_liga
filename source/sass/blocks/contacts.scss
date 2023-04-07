@@ -82,6 +82,8 @@
   font-style: normal;
   gap: 10px;
 
+  margin-right: auto;
+
   @include vp-1023 {
     align-items: start;
   }

@@ -29,6 +29,13 @@ html {
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+  @include vp-767 {
+    scroll-behavior: auto;
+
+    &.menu-open {
+      overflow: hidden;
+    }
+  }
 }
 
 body {
@@ -38,6 +45,12 @@ body {
   flex-direction: column;
 
   background-color: $color-alice-blue;
+
+  @include vp-767 {
+    &.menu-open {
+      overflow: hidden;
+    }
+  }
 }
 
 
