@@ -1020,7 +1020,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  position: absolute;
+  position: fixed;
   bottom: 6px;
   right: 32px;
   -webkit-transform: perspective(300px) rotateY(-180deg);
@@ -1068,7 +1068,6 @@ button,
   padding: 28px 25px 34px;
   -webkit-transform: perspective(300px) rotateY(180deg);
   transform: perspective(300px) rotateY(180deg);
-  overflow-y: auto;
 }
 
 .card__text-wrapper {
@@ -1110,6 +1109,7 @@ button,
 .card:hover > .card__back {
   -webkit-transform: perspective(300px) rotateY(0deg);
   transform: perspective(300px) rotateY(0deg);
+  overflow-y: auto;
 }
 
 .card:focus-within > .card__back h3,

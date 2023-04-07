@@ -12,7 +12,7 @@
   font-size: 18px;
   line-height: 27px;
 
-  position: absolute;
+  position: fixed;
   bottom: 6px;
   right: 32px;
 
@@ -75,8 +75,6 @@
 
   transform: perspective(300px) rotateY(180deg);
 
-  overflow-y: auto;
-
   @include vp-1023 {
     padding: 28px 35px 35px;
   }
@@ -122,6 +120,7 @@
 .card:focus-within > .card__back,
 .card:hover > .card__back {
   transform: perspective(300px) rotateY(0deg);
+  overflow-y: auto;
 }
 
 .card:focus-within > .card__back h3,
